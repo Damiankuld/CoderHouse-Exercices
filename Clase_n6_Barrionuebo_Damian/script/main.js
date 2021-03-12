@@ -16,7 +16,7 @@ const memoryRam = ["ddr3", "ddr4"];
 const storage = ["Disco sólido", "Disco duro"];
 const fanCooler = [80, 120];
 const tarjetaGrafica = ["AMD", "NVIDIA"];
-
+/*
 let armarPC = confirm ("Bienvenido a su asistente de ensamblaje ¿Le gustaria que empecemos?");
 
 if (armarPC === true){
@@ -38,3 +38,17 @@ if (armarPC === true){
     console.table(usuario);
 
 }else{alert=("Tenga buen día")};
+*/
+/***************************************************************/
+//Ordenar un array de objetos
+
+for(let i=0; i<motherboard.length; i+=1){
+    console.log(motherboard[i]);
+} //recorrer arrays
+
+console.log(memoryRam.toString());
+
+
+
+
+
