@@ -1,0 +1,40 @@
+body{
+    background: black;
+    color: blanchedalmond;
+    text-align: center;
+}
+.allBody{
+    background: black;
+    background-image: url(img.css/crypts.room_wall.arch.png);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 1960px;
+    margin:15px;
+    margin: auto;
+}
+
+footer, li{
+    text-align: left;
+}
+.battle{
+    background-color: transparent ;
+    background-image: url(img.css/crypts.room_wall.altar.png);
+    background-size: 900px;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 1520px;
+    border: 6px solid crimson;
+    background-size: cover;
+    margin: auto;
+    margin-top: 190px;
+}
+.positionCombat{
+    width: 300px; 
+    height: 300px; 
+    margin-top:250px;
+}
+.positionCombat2{
+    width: 260px; 
+    height: 260px; 
+    margin-top:265px;
+}
