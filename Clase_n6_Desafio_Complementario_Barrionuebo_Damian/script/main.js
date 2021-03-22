@@ -1,5 +1,6 @@
 /******************Clase_N6_Complementario_Barrionuebo_Damián******************/
 
+
 const motherboard = [
     {producto: "MSI", valor: 7500},
     {producto: "Asrock", valor: 9500},
@@ -22,6 +23,9 @@ const tarjetaGrafica = [
     {producto: "NVIDIA", valor: 55000},
     {producto: "AMD", valor: 60000},
 ];
+
+
+
  //Ordenar por nombre
  const OrdenAlfabetico=(id)=>{
     id.sort(function (a, b) {
@@ -47,6 +51,7 @@ const OrdenNumerico=(id)=>{
   });
 }
 //Acción
+/*
 let activacion= alert("A continuación le daremos a escoger entre nuestro catalogo de productos");
 let pregunta1= prompt("¿Qué productos le gustaria inspeccionar? Motherboard, Memoria ram, Almacenamiento interno, Tarjeta grafica o Fancooler");
 let pregunta2= confirm("¿Desea ordenarlo alfabeticamente?");
@@ -87,3 +92,30 @@ if(pregunta1.toUpperCase() === "MOTHERBOARD"){
         OrdenNumerico(fanCooler);
         console.table(fanCooler)}
 }else{console.log("Categoria invalida");}
+
+
+const buscardatos=()=>{
+}
+*/
+
+Seleccion=()=>{
+    indexSelect=document.getElementById("productos").Value;
+}
+
+console.log(motherboard[0].valor);
+
+
+const price=()=>{
+    let ingreso = document.getElementById(`productos`).value;
+
+    switch (inderxSelect){
+        case "MSI":
+            document.getElementById(`costo`).innerText = `${motherboard[0].valor}`
+            break;
+        case "Asrock":
+            document.getElementById(`mother`).innerText = `${motherboard[1].valor}`
+    
+        default:
+            break;
+    }
+}
