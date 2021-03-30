@@ -1,0 +1,203 @@
+/*Fuente*/
+@font-face{
+    font-family:King_Arthur_Legend;
+    src:url('../fuentes/King_Arthur_Legend.ttf');
+}
+
+body{
+    background: black;
+    color: blanchedalmond;
+    text-align: center;
+    font-family:King_Arthur_Legend;
+}
+.allBody{
+    background: black;
+    background-image: url(/assets/images/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 1960px;
+    margin:15px;
+    margin: auto;
+}
+header{
+    color:crimson;
+}
+footer, li{
+    text-align: left;
+}
+
+/*Sala de batalla*/
+.battle{
+    background-color: transparent ;
+    background-image: url(/assets/images/interface/crypts.room_altar.png);
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 1520px;
+    border: 1px solid crimson;
+    margin: auto;
+    margin-top: 290px;
+}
+/*Background tabla de contenido*/
+#BattleStateAll{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.battleStateBannerLeft{
+    background-color: transparent;
+    background-image: url(/assets/images/interface/panel/panelLeft.png);
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    height: 270px;
+    width: 760px;
+    border: 1px solid crimson; 
+    margin-left: 220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.battleStateBannerRight{
+    background-color: transparent;
+    background-image: url(/assets/images/interface/panel/panelRight.png);
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    height: 270px;
+    width: 760px;
+    border: 1px solid crimson;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.banner{border: 1px solid white;}
+/*DIVISION DEL BANNER DE CONTENIDO*/
+#bannerSide{width: 190px;}
+#infoHero{width: 570px;}
+#statsEnemy{width: 555px;}
+
+#statsHeroUp{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 110px;
+}
+#statsHeroDown{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 160px;
+}
+#portraitHero{
+    border: 1px solid white;
+    width: 95px;
+}
+#nameHero{
+    border: 1px solid white;
+    width: 110px;
+}
+#skillsHero{
+    border: 1px solid white;
+    width: 360px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#statsHero{
+    border: 1px solid white;
+    width: 190px;
+}
+#equip{
+    border: 1px solid white;
+    width: 160px;
+}
+#trinkets{
+    border: 1px solid white;
+    width: 200px;
+}
+#statsEnemyUp{
+    border: 1px solid white;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#statsEnemyCenter{
+    border: 1px solid white;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#statsEnemyDown{
+    border: 1px solid white;
+    height: 133px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#nameEnemy{
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#hpEnemy{
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/*Escala de personaje*/
+.lenght{
+    height: 300px;
+    margin-top:50px;
+}
+/*Columnas de personaje*/
+.columnaN1:hover{
+    background-image: url(/assets/images/interface/iconos/selected_1.png); /*selector*/
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 200px;    
+}
+.columnaN2:hover{
+    background-image: url(/assets/images/interface/iconos/target_1.png); /*selector*/
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 200px;
+}
+.columnaN1{                          /*columnas de heroes*/
+    height: 410px;
+    width: 220px;
+    /*border: 1px solid green;*/
+    float: left;  
+    margin-left: 50;
+    border: 1px solid white;   
+}
+.columnaN2{                          /*columnas de enemigos*/
+    height: 410px;
+    width: 220px;
+    /*border: 1px solid red;*/
+    float: right;
+    margin-left: 50;
+    border: 1px solid white;
+}
+#selection{
+    margin-top: 105px;
+    margin-left: 120px;
+    height: 60px;
+    width: 660px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#selection div{
+    width: 90px;
+    align-items: auto;
+    border: 1px solid white;
+}
+#selection div img{
+    height: 60px;
+}
+
+/*************************************************/
+/*
+.option1{
+    background-image: url(pj.css/otros/caos_entropico.gif);
+}
+.option2{
+    background-image: url(pj.css/otros/caos_campeon.gif);
+}*/

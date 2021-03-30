@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARKEST DUNGEON</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>THE DARKEST DUNGEON</title>   
+
+</head>
+
+<body>
+<div class= "allBody">
+    <header>
+        <hgroup>
+            <h1>THE DARKEST DUNGEON</h1>
+            <h2></h2>
+            <h3 id=intro>Entra y lidera a un equipo de héroes imperfectos a través de enrevesados bosques, laberintos olvidados, criptas en ruinas y más allá.</h3> 
+        </hgroup>
+    </header>            
+    <section>               
+        <!--
+        <form name="chapters">
+            <input type="button" value="+" onclick="adelante()">
+            <img src="css/pj.css/iconos/foto1.png" width="80" id="foto">
+            <input type="button" value="-" onclick="atras()">
+        </form>
+        -->
+    </section>
+
+        <!--Sala de batalla  -->
+        <article class=battle>
+            <!--selector de heroes-->
+            <div id="selection">
+                <div id="selectHero1"></div>
+                <div id="selectHero2"></div>
+                <div id="selectHero3"></div>
+            </div> 
+            <div>
+                <!--columnas de heroes-->
+                <div style="margin-left: 50px;">
+                    <!--posicion 3-->
+                    <div id="position1" class='columnaN1' onclick="showContent('arbalestera', arbalestera, 'hpHero3');">
+                        <img class='lenght' src="../assets/images/otros/sauro.gif" alt="">                     
+                    </div>
+                    <!--posicion 2-->
+                    <div class='columnaN1' onclick="showContent('barbara', barbara, 'hpHero2');">
+                            <img class='lenght' src="../assets/images/otros/barbara.gif" alt="barbara">                                       
+                    </div>
+                    <!--posicion 1-->
+                    <div class='columnaN1' onclick="showContent('cruzado', cruzado, 'hpHero1');">
+                        <img class='lenght' title="Elfa Oscura" src="../assets/images/otros/elfo_oscudo.gif" alt="elfa">                       
+                    </div>
+                </div>
+                <!--columnas de enemigos-->
+                <div style="margin-right:50px">
+                    <!--posicion 3-->
+                    <div class='columnaN2' onclick="showContentEnemy(esqueletoArballestero.name,'hpEnemy3');">
+                        <img class='lenght' src="../assets/images/otros/coas_sucubo.gif" alt="sucubo">                       
+                    </div>
+                    <!--posicion 2-->
+                    <div class='columnaN2' onclick="showContentEnemy(esqueletoGuerrero.name, 'hpEnemy2');">
+                        <img class='lenght' src="../assets/images/otros/caos_campeon.gif" alt="caos">                       
+                    </div>
+                    <!--posicion 1-->
+                    <div class='columnaN2' onclick="showContentEnemy(esqueletoEscudero.name,'hpEnemy1');">
+                        <img class='lenght' src="../assets/images/otros/caos_entropico.gif" alt="entropia">                       
+                    </div>
+                </div>            
+            </div>
+        </article>
+        <!--  Tablas de habilidad y stats  -->
+        <div id="BattleStateAll">
+            <article class="battleStateBannerLeft">
+                <div id="bannerSide" class="banner"></div>
+                
+                <div id="infoHero" class="banner">
+                    <div id="statsHeroUp">
+                        <div id="portraitHero"></div> <!--retrado de heroe-->
+                        <div id="nameHero"></div>     <!--nombre de heroe-->
+                        <div id="skillsHero">         <!--lista de hablidades-->
+                            <div id="skillSlot1" onclick="heraldo.accionDeCombate(heraldo,4,true,'esqueleto');"></div>
+                            <div id="skillSlot2" onclick=""></div>
+                            <div id="skillSlot3" onclick=""></div>
+                            <div id="skillSlot4" onclick=""></div>
+                            <div id="skillSlot5" onclick=""></div>
+                        </div>
+                    </div>
+                    <div id="statsHeroDown"> <!--vida y equipo de heroe-->
+                        <div id="statsHero"></div>
+                        <div id="equip"></div>
+                
+                        <div id="trinkets"></div>
+                    </div>
+                </div>
+            </article>
+            <article class="battleStateBannerRight"> <!--tabla de contenido enemigo-->
+                <div id="statsEnemy" class="banner">
+                    <div id="statsEnemyUp">
+                        <div id="nameEnemy"></div>   <!--nombre de enemigo-->
+                        <div id="hpEnemy"></div>     <!--vida de enemigo-->
+                    </div>
+                    <div id="statsEnemyCenter">      <!--estadisticas-->
+                        <div id=""></div>
+                        <div id=""></div>
+                    </div>
+                    <div id="statsEnemyDown">        <!--habilidades de enemigo-->
+                        <div id=""></div>
+                        <div id=""></div>
+                    </div>
+                </div>
+                
+                <div id="bannerSide" class="banner"></div> 
+            </article>
+        </div>
+            
+   <!-- -->
+    <footer>
+        
+        <img src="css/img.css/RedHook.jpg" alt="">
+        Trabajo final Version n6.5
+        <a style="color:crimson"href="https://www.darkestdungeon.com/">Derechos reservados RedHook</a>
+    </footer>
+
+    <script type="text/javascript" src="script/main.js"></script>
+    <script type="text/javascript" src="script/dom.js"></script>
+    <script type="text/javascript" src="script/pruebas.js"></script>
+</div>
+</body>
+
+</html>
